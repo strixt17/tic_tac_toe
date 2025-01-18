@@ -10,28 +10,29 @@ int buttonx3;
 int buttony3;
 
 void setup(){
-    size(640, 480);
-    buttonx1 = 0;
-    buttony1 = 0;
+    size(700, 400);
+    buttonx1 = 200;
+    buttony1 = 50;
     
-    buttonx2 = 100;
-    buttony2 = 100;
+    buttonx2 = 300;
+    buttony2 = 150;
 
-    buttonx3 = 200;
-    buttony3 = 200;
+    buttonx3 = 400;
+    buttony3 = 250;
 }
 
 void draw(){
     background(0);
     if(gamestate == 0){
         textSize(50);
-        text("Tic Tac Toe", 200, 70);
-        rect(225, 225, 175, 100);
+        text("Tic Tac Toe", 225, 70);
+        rect(250, 225, 175, 100);
         fill(0);
-        text("Play", 265, 285);
+        text("Play", 290, 285);
         fill(255);
     }
     if(gamestate == 1){
+    fill(255);
     rect(buttonx1, buttony1, 100, 100);
     rect(buttonx2, buttony1, 100, 100);
     rect(buttonx3, buttony1, 100, 100);
@@ -42,6 +43,8 @@ void draw(){
     rect(buttonx2, buttony3, 100, 100);
     rect(buttonx3, buttony3, 100, 100);
     }
+    
+
 }
 
 void mousePressed(){
