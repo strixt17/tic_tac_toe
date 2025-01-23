@@ -101,6 +101,39 @@ void draw(){
         text("O", buttonx2 + 35, buttony1 + 75);
     }
 
+    if(buttonx2y2 == 1){
+        fill(0);
+        textSize(50);
+        text("X", buttonx2 + 35, buttony2 + 75);
+    }
+    if(buttonx2y2 == 2){
+        fill(0);
+        textSize(50);
+        text("O", buttonx2 + 35, buttony2 + 75);
+    }
+
+    if(buttonx2y3 == 1){
+        fill(0);
+        textSize(50);
+        text("X", buttonx2 + 35, buttony3 + 75);
+    }
+    if(buttonx2y3 == 2){
+        fill(0);
+        textSize(50);
+        text("O", buttonx2 + 35, buttony3 + 75);
+    }
+
+    if(buttonx3y1 == 1){
+        fill(0);
+        textSize(50);
+        text("X", buttonx3 + 35, buttony1 + 75);
+    }
+    if(buttonx3y1 == 2){
+        fill(0);
+        textSize(50);
+        text("O", buttonx3 + 35, buttony1 + 75);
+    }
+
     if(buttonx3y2 == 1){
         fill(0);
         textSize(50);
@@ -209,8 +242,8 @@ void mousePressed(){
                     }
                     if(player == 2){
                         buttonx1y3 = 2;
-                        playerswap();
                     }
+                    playerswap();
                 }
             }
             if(mouseX >= buttonx2 && mouseX <= buttonx2 + 100){
