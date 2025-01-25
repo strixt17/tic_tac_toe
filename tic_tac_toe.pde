@@ -282,7 +282,7 @@ void playerswap(){
 
 void xo(){
         if(buttonx1y1 == 1){
-        fill(0);
+        fill(0); 
         textSize(50);
         text("X", buttonx1 + 35, buttony1 + 75);
     }
